@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduQuiz - Plataforma de Cuestionarios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 EduQuiz</h1>
+    <p>Practica tus conocimientos respondiendo este quiz educativo</p>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <div class="question">
+        <h3>1. ¿Qué etiqueta se usa para crear un enlace en HTML?</h3>
+        <label><input type="radio" name="q1" value="a">&lt;link&gt;</label>
+        <label><input type="radio" name="q1" value="b">&lt;a&gt;</label>
+        <label><input type="radio" name="q1" value="c">&lt;href&gt;</label>
+      </div>
+
+      <div class="question">
+        <h3>2. ¿Cuál de los siguientes es un lenguaje de estilos?</h3>
+        <label><input type="radio" name="q2" value="a">HTML</label>
+        <label><input type="radio" name="q2" value="b">CSS</label>
+        <label><input type="radio" name="q2" value="c">JavaScript</label>
+      </div>
+
+      <div class="question">
+        <h3>3. ¿Qué función tiene JavaScript en una página web?</h3>
+        <label><input type="radio" name="q3" value="a">Definir el diseño</label>
+        <label><input type="radio" name="q3" value="b">Dar interactividad</label>
+        <label><input type="radio" name="q3" value="c">Almacenar datos</label>
+      </div>
+
+      <button type="submit" class="btn">Enviar respuestas</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <h2>Tu puntaje:</h2>
+      <p id="scoreText"></p>
+      <button id="retryBtn" class="btn">Intentar de nuevo</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 EduQuiz - Proyecto educativo creado por Tatiana Castañeda</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
